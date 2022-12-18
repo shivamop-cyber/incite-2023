@@ -12,6 +12,7 @@
   opacity: 0;
 }
 .overlay:target {
+  display: block;
   visibility: visible;
   opacity: 1;
 }
