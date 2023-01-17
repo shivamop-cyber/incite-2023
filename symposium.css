@@ -1,0 +1,107 @@
+#symposium{
+    width: 100%;
+}
+
+.section-header{
+    margin-top: 5rem;
+}
+
+p, h4, h5{
+    font-family: "Opan Sans";
+    text-align: center;
+}
+
+img{
+    width: 60%;
+}
+
+
+
+.about_symposium{
+  align-self: center;
+  padding: 40px;
+}
+
+.about_symposium >p{
+    font-size: 17px; 
+    text-align: justify; 
+    font-family: 'Open Sans';
+}
+
+.sym_content{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.sym_content_item > ul > li{
+
+    text-align: left;
+    padding-top: 1rem ;
+
+}
+
+h5{
+    padding: 1rem !important;
+    background-color: #060c22;
+    color: white !important;
+    border-radius: 30px ;
+    width: 100%;
+}
+
+.sym_dates{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sym_prize{
+    margin-top: 5rem;
+}
+
+.sym_prize > p{
+    text-align: justify;
+}
+
+table{
+    font-family: Georgia, Times New Roman, Times, serif;
+    margin: 25px auto;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #060c22;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1),
+      0px 10px 20px rgba(0, 0, 0, 0.07),
+      0px 20px 20px rgba(0, 0, 0, 0.07),
+      0px 30px 20px rgba(0, 0, 0, 0.07);
+}
+
+th{
+    background: #060c22;
+                    border: 1px solid #eee;
+                    padding: 12px 35px;
+                    border-collapse: collapse;
+                    font-family: 'Open Sans';
+                    color: white;
+}
+
+td{
+    border: 1px solid #eee;
+                    padding: 12px 35px;
+                    border-collapse: collapse;
+                    font-family: 'Open Sans'
+}
+
+
+@media screen and (max-width: 798px)  {
+    
+    img{
+        width: 100%;
+    }
+
+    .sym_content{
+        flex-direction: column;
+    }
+
+
+}
+
