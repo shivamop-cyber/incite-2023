@@ -89,6 +89,32 @@
       .pointer:hover {
         cursor: pointer !important;
       }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(12, 12, 12);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #fcc203;}
+.dropdown:hover .dropdown-content {display: block;}
+
     </style>
   </head>
 
@@ -107,20 +133,34 @@
           /></a>
         </div>
 
-        <nav id="nav-menu-container" style="padding: 15px 0px">
+        <nav id="nav-menu-container" style="padding: 15px 0px; ">
           <ul class="nav-menu">
-            <li><a class="pointer" href="index.html">Home</a></li>
-            <!-- <li><a href="#journal1">Speakers</a></li> -->
-            <!-- <li ><a class="pointer" href="https://easychair.org/conferences/?conf=incite2022" style="color: #fcc203;">Submit Paper</a></li> -->
-          </ul>
-        </nav>
-        <!-- #nav-menu-container -->
+            <li><a href="index.html">Home</a></li>
+            <!-- <li class="home-active"><a style="cursor: pointer;" href="#journal1">Journals</a></li>
+            <li><a style="cursor: pointer;" href="#industrial">
+              <div class="dropdown" >
+                <div class="dropbtn">Industrial Session</div>
+                <div class="dropdown-content">
+                  <a href="#2nd">2nd March</a>
+                  <a href="#3rd">3rd March</a>
+                </div>
+              </div></a></li>
+          </li> -->
+        </ul>
+      </nav>
       </div>
     </header>
     <!-- End Header -->
-    <br /><br />
-    <br /><br />
     <section id="journal1">
+      <br/><br/>
+      <div data-aos="fade-up">
+        <div class="section-header">
+          <strong>
+            <h2 style="color:#0e1b4d; font-weight: 700;">
+              DISTINGUISHED SPEAKERS
+            </h2>
+          </strong>
+        </div>
       <a href="#tarek">
         <article class="card">
           <div class="card__wrapper">
@@ -1517,10 +1557,500 @@
           </div>
         </article>
       </a>
-   
-
     </section>
-    <section id="journal2">
+   
+    <!-- Industrial Session Section -->
+    <section id="industrial">
+     
+      <!-- <div data-aos="fade-up">
+        <div class="section-header">
+          <strong><h2 style="color:#0e1b4d; font-weight: 700;">INDUSTRY SPEAKERS</h2></strong>
+          
+        </div> -->
+        <!-- <div class="row justify-content-center">
+          <div class="col-lg-14">
+            <ul id="faq-list">
+                <a data-toggle="collapse" class="collapsed" href="#faq1" style="color:black;"> -->
+                  <!-- <div id="2nd">
+                  <strong style="text-decoration: underline;">
+                      02 March (Thursday)
+                  </strong> -->
+                  <!-- <i class="fa fa-minus-circle" style="margin-right: 0%;"></i
+                >
+                </a>
+                <div id="faq1" class="collapse" data-parent="#faq-list"> -->
+                  <!-- <br/> -->
+                  <div data-aos="fade-up">
+                    <strong><h2 style="color:#0e1b4d; font-weight: 700;">
+                    <!-- 12:15 to 1:15 PM : <span style="text-decoration: underline;">-->
+                    Session on-
+                    <span style= "margin-left: 8px;">Women in Engineering:<span style= "margin-left: 5px;">
+                       "Your Innovative Journey as Woman Technocrat"</span></span>
+                    </h2></strong>
+                  <br/>
+                  <!--<br/> -->
+          <article class="card">
+          <div class="card__wrapper">
+            <figure class="card__feature">
+              <img
+                src="./speakers/deepa.jpg"
+                class="card__img"
+                alt="Bridge"
+                width="273"
+                height="240"
+              />
+            </figure>
+            <div class="card__box">
+              <header class="card__item card__header">
+                <h2 class="card__item card__item--small card__title">
+                  Ms.Deepa Kaul
+                </h2>
+              </header>
+              <hr class="card__item card__divider" />
+              <section class="card__item card__body">
+                <p>CIO <br />
+                    Sopra Steria
+                  <br /><br />
+                  <br />
+                  <br />
+                  <br />
+                </p>
+              </section>
+            </div>
+          </div>
+          </article>
+          <article class="card">
+          <div class="card__wrapper">
+            <figure class="card__feature">
+              <img
+                src="./speakers/vertika.jpg"
+                class="card__img"
+                alt="Bridge"
+                width="273"
+                height="240"
+              />
+            </figure>
+            <div class="card__box">
+              <header class="card__item card__header">
+                <h2 class="card__item card__item--small card__title">
+                  Ms.Vertika Misra
+                </h2>
+              </header>
+              <hr class="card__item card__divider" />
+              <section class="card__item card__body">
+                <p>Director of Public Policy <br />
+                  NASSCOM
+                  <br /><br />
+                  <br />
+                  <br />
+                  <br />
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__wrapper">
+            <figure class="card__feature">
+              <img
+                src="./speakers/sarbani.jpg"
+                class="card__img"
+                alt="Bridge"
+                width="273"
+                height="240"
+              />
+            </figure>
+            <div class="card__box">
+              <header class="card__item card__header">
+                <h2 class="card__item card__item--small card__title">
+                  Ms.Sarbani Maiti
+                </h2>
+              </header>
+              <hr class="card__item card__divider" />
+              <section class="card__item card__body">
+                <p>
+                  <!-- <span style="font-size: 14px;"> -->
+                    Vice President- Data Science 
+                    <br />
+                    <!-- Machine Learning
+                    <br/>
+                    NLP |
+                    MLOPS |
+                    AWS
+                    <br/>
+                    Community Builder
+                    <br/>
+                    Mentor
+                    <br/> -->
+                  <!-- </span> -->
+                    Veersa Technologies
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__wrapper">
+            <figure class="card__feature">
+              <img
+                src="./speakers/"
+                class="card__img"
+                alt="Bridge"
+                width="273"
+                height="240"
+              />
+            </figure>
+            <div class="card__box">
+              <header class="card__item card__header">
+                <h2 class="card__item card__item--small card__title">
+                  Ms.Smita Gupta
+                </h2>
+              </header>
+              <hr class="card__item card__divider" />
+              <section class="card__item card__body">
+                <p>Asst. Gernal Manager <br />
+                    Engineers India Ltd.
+                  <br /><br />
+                  <br />
+                  <br />
+                  <br />
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+        <br/>
+        <br/>
+           <div data-aos="fade-up">
+                    <strong><h2 style="color:#0e1b4d; font-weight: 700;">
+              <!-- 3:00 to 4:00 PM <span style="text-decoration: underline;">--> 
+                Session on-
+                <span style= "margin-left: 8px;">
+                  Evolving Future of Work: <span style= "margin-left: 5px;">
+                   "How to get yourself hired"
+                  </span>
+                </span></h2>
+          </strong> 
+        <br/>
+        <article class="card">
+          <div class="card__wrapper">
+            <figure class="card__feature">
+              <img
+                src="./speakers/satinder.jpg"
+                class="card__img"
+                alt="Bridge"
+                width="273"
+                height="240"
+              />
+            </figure>
+            <div class="card__box">
+              <header class="card__item card__header">
+                <h2 class="card__item card__item--small card__title">
+                  Ms.Satinder Suri
+                </h2>
+              </header>
+              <hr class="card__item card__divider" />
+              <section class="card__item card__body">
+                <p>Deputy Vice President-<br />
+                    Talent Acquisition
+                  <br />
+                  SBI Card<br />
+                  <br />
+                  <br />
+                  <br />
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__wrapper">
+            <figure class="card__feature">
+              <img
+                src="./speakers/kanishka.jpg"
+                class="card__img"
+                alt="Bridge"
+                width="273"
+                height="240"
+              />
+            </figure>
+            <div class="card__box">
+              <header class="card__item card__header">
+                <h2 class="card__item card__item--small card__title">
+                  Mr.Kanishka Mallik
+                </h2>
+              </header>
+              <hr class="card__item card__divider" />
+              <section class="card__item card__body">
+                <p>Senior Vice President- <br />
+                    Talent Solutions
+                  <br />
+                  Coffee Mug<br />
+  
+                  <br />
+                  <br />
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__wrapper">
+            <figure class="card__feature">
+              <img
+                src="./speakers/kanish.jpg"
+                class="card__img"
+                alt="Bridge"
+                width="273"
+                height="240"
+              />
+            </figure>
+            <div class="card__box">
+              <header class="card__item card__header">
+                <h2 class="card__item card__item--small card__title">
+                  Mr.Kanish Gaur
+                </h2>
+              </header>
+              <hr class="card__item card__divider" />
+              <section class="card__item card__body">
+                <p> <span style="font-size: 14px;">Founder & Chief Executive  Officer</span><br />
+                    India Future Foundation
+                  <br /><br />
+                  <br/>
+                  <br />
+                  <br />
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__wrapper">
+            <figure class="card__feature">
+              <img
+                src="./speakers/sanjeev.jpg"
+                class="card__img"
+                alt="Bridge"
+                width="273"
+                height="240"
+              />
+            </figure>
+            <div class="card__box">
+              <header class="card__item card__header">
+                <h2 class="card__item card__item--small card__title">
+                  Mr.Sanjeev Kaushik
+                </h2>
+              </header>
+              <hr class="card__item card__divider" />
+              <section class="card__item card__body">
+                <p>Head Cybersecurity/
+                  <br/>
+                  CISO- Airports BU <br />
+                  Adani  
+                  <br/>
+                  <br />
+                  <br />
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+        <br/>
+        </div>
+            </ul>
+          </div>
+        </div>
+    <!-- <br/>
+    <br/> -->
+      </div>
+
+       <!-- 3rd -->
+       <div id="3rd">
+        <div data-aos="fade-up">
+          <strong><h2 style="color:#0e1b4d; font-weight: 700;"> 
+            <!-- <span style="text-decoration: underline;">ChatGPT</span> -->
+            Session on- <span style= "margin-left: 8px;">ChatGPT: 
+              <span style= "margin-left: 5px;">
+              "A Threat to Human Jobs or Tool Towards Excellence"
+            </span>
+          </span></h2>
+        </strong>
+       <br/>
+            <!-- <strong>
+            2:00 to 3:00 PM : Chat GPT : "A Treat to Human Jobs or Tool Towards Excellence"
+            </strong> -->
+  <article class="card">
+  <div class="card__wrapper">
+    <figure class="card__feature">
+      <img
+        src="./speakers/"
+        class="card__img"
+        alt="Bridge"
+        width="273"
+        height="240"
+      />
+    </figure>
+    <div class="card__box">
+      <header class="card__item card__header">
+        <h2 class="card__item card__item--small card__title">
+          Mr. Rohit Bharath Das
+        </h2>
+      </header>
+      <hr class="card__item card__divider" />
+      <section class="card__item card__body">
+        <p>Partner <br />
+          Grant Thornton Bharat LLP
+          <br />
+          <br />
+          <br />
+          <br />
+        </p>
+      </section>
+    </div>
+  </div>
+  </article>
+  <article class="card">
+  <div class="card__wrapper">
+    <figure class="card__feature">
+      <img
+        src="./speakers/shaakun.jpg"
+        class="card__img"
+        alt="Bridge"
+        width="273"
+        height="240"
+      />
+    </figure>
+    <div class="card__box">
+      <header class="card__item card__header">
+        <h2 class="card__item card__item--small card__title">
+          Mr.Shaakun Khanna
+        </h2>
+      </header>
+      <hr class="card__item card__divider" />
+      <section class="card__item card__body">
+        <p>Vice President <br />
+          Oracle Corporation
+          <br />
+          <br />
+          <br />
+          <br />
+        </p>
+      </section>
+    </div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="card__wrapper">
+    <figure class="card__feature">
+      <img
+        src="./speakers/amit.jpg"
+        class="card__img"
+        alt="Bridge"
+        width="273"
+        height="240"
+      />
+    </figure>
+    <div class="card__box">
+      <header class="card__item card__header">
+        <h2 class="card__item card__item--small card__title">
+          Mr.Amit Narula
+        </h2>
+      </header>
+      <hr class="card__item card__divider" />
+      <section class="card__item card__body">
+        <p>
+          <!-- <span style="font-size: 14px;"> -->
+            Global IT Senior Director- 
+            <br />
+            Cloud & Infrastructure
+            <br/>
+            Boston Consulting Group (BCG)
+            <br/>
+            <br/>
+            <br/>
+        </p>
+      </section>
+    </div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="card__wrapper">
+    <figure class="card__feature">
+      <img
+        src="./speakers/keerthi.jpg"
+        class="card__img"
+        alt="Bridge"
+        width="273"
+        height="240"
+      />
+    </figure>
+    <div class="card__box">
+      <header class="card__item card__header">
+        <h2 class="card__item card__item--small card__title">
+          Mr. Keerthi Lal
+        </h2>
+      </header>
+      <hr class="card__item card__divider" />
+      <section class="card__item card__body">
+        <p>V.P.- Elcom Innovations<br />
+            & Senior Advisor Sun Group
+          <br />
+          Elcon Innovations/ Sun Group
+          <br/>
+          <br/>
+          <br />
+          <br />
+        </p>
+      </section>
+    </div>
+  </div>
+</article>
+<article class="card">
+  <div class="card__wrapper">
+    <figure class="card__feature">
+      <img
+        src="./speakers/sameer.jpg"
+        class="card__img"
+        alt="Bridge"
+        width="273"
+        height="240"
+      />
+    </figure>
+    <div class="card__box">
+      <header class="card__item card__header">
+        <h2 class="card__item card__item--small card__title">
+          Mr.Sameer Nigam
+        </h2>
+      </header>
+      <hr class="card__item card__divider" />
+      <section class="card__item card__body">
+        <p>
+          <!-- <span style="font-size: 14px;"> -->
+            CEO<br/>
+            Stratbeans Consulting
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </p>
+      </section>
+    </div>
+  </div>
+</article>
+       </div>
+<br/>
+    </section>
+  <section id="journal2">
   <div class="container-fluid" data-aos="fade-up">
     <div class="section-header">
       <h2>&nbsp;<h2>
